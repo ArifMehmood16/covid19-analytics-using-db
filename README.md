@@ -1,2 +1,2 @@
 # covid19-analytics-using-db
- Spring boot application to provide rest api for covid19 data collected in csv
+ Maven based project having spring boot application to provide rest api for covid19 data collected in csv
