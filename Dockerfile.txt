@@ -1,0 +1,9 @@
+FROM java:8-jdk-alpine
+
+COPY ./target/covid19-analytics-using-db-1.0-SNAPSHOT.jar /usr/app/
+
+WORKDIR /usr/app
+
+RUN sh -c 'touch covid19-analytics-using-db-1.0-SNAPSHOT.jar'
+
+ENTRYPOINT ["java","-jar","covid19-analytics-using-db-1.0-SNAPSHOT.jar"]
